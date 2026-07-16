@@ -1,4 +1,3 @@
-url=https://github.com/Emna-chebbi/Portfolio/blob/main/.github/workflows/deploy.yml
 name: Deploy to Netlify
 
 on:
