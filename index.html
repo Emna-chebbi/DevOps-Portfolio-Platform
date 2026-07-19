@@ -105,20 +105,21 @@
   .hero-identity{
     display:flex;
     align-items:center;
-    gap:22px;
+    gap:28px;
     margin-bottom:22px;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
   }
   .hero-avatar{
-    width:clamp(90px, 12vw, 128px);
-    height:clamp(90px, 12vw, 128px);
+    width:clamp(120px, 14vw, 168px);
+    height:clamp(120px, 14vw, 168px);
     border-radius:50%;
     object-fit:cover;
     flex-shrink:0;
-    border:2px solid var(--border);
-    box-shadow:0 0 0 4px rgba(88,166,255,0.08);
+    border:3px solid var(--border);
+    box-shadow:0 0 0 5px rgba(88,166,255,0.08);
   }
   .hero-identity h1{margin:0;}
+  .hero-identity-text{min-width:0;}
 
   .status-pill{
     display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.78rem;
@@ -300,8 +301,9 @@
     .hero h1{font-size:2.2rem;}
     h2.section-title{font-size:1.6rem;}
     section{padding:80px 0;}
-    .hero-identity{gap:16px;}
-    .hero-avatar{width:90px;height:90px;}
+    .hero-identity{flex-wrap:wrap;justify-content:center;text-align:center;gap:16px;}
+    .hero-identity h1{font-size:2rem;}
+    .hero-avatar{width:100px;height:100px;}
   }
 </style>
 </head>
@@ -333,7 +335,7 @@
       <div>
         <div class="hero-identity">
           <img class="hero-avatar" src="assets/profile.png" alt="Emna Chebbi">
-          <div>
+          <div class="hero-identity-text">
             <div class="status-pill" style="margin-bottom:10px;"><span class="dot"></span>OPEN TO DEVOPS &amp; DEVSECOPS ROLES</div>
             <h1>Emna Chebbi<br><span class="accent">DevOps Engineer</span></h1>
           </div>
